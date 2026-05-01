@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Glad 2 Glow Skincare</title>
+
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background: linear-gradient(to right, rgb(255, 200, 209), rgb(241, 163, 241));
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ff6f91;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 50px;
+        }
+
+        .hero-text {
+            max-width: 500px;
+        }
+
+        .hero-text h1 {
+            font-size: 40px;
+            color: #ff6f91;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text button {
+            padding: 12px 25px;
+            border: none;
+            background-color: #ef6686;
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .hero-text button:hover {
+            background-color: #e85d7c;
+        }
+
+        .hero img {
+            width: 300px;
+            border-radius: 20px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px;
+            background-color: #fff0f5;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 30px 0 30px;
+            color: #ff6f91;
+        }
+
+        .review {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .contact {
+            padding: 50px;
+            text-align: center;
+            background-color: #fff0f5;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff6f91;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">Glad 2 Glow</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#produk">Produk</a>
+            <a href="#review">Review</a>
+            <a href="#kontak">Kontak</a>
+        </div>
+    </div>
+
+    
+    <div class="hero" id="home">
+        <div class="hero-text">
+            <h1>Kulit Cerah Alami dengan Glad 2 Glow</h1>
+            <p>Skincare terbaik untuk membuat kulitmu glowing, sehat, dan terawat setiap hari.</p>
+            <button>Beli Sekarang</button>
+        </div>
+        <img src="g2g.jpeg" alt="Produk Skincare">
+    </div>
+
+    <!-- produk -->
+    <div class="features" id="produk">
+        <div class="card">
+            <img src="serumg2g.jpeg" alt="">
+            <h3>Brightening Serum</h3>
+            <p>Mencerahkan kulit dan mengurangi noda hitam.</p>
+        </div>
+
+        <div class="card">
+            <img src="moisturaizerg2g.jpeg" alt="">
+            <h3>Moisturaizer</h3>
+            <p>Melembapkan kulit sepanjang hari.</p>
+        </div>
+
+        <div class="card">
+            <img src="facewashg2g.jpeg" alt="">
+            <h3>Facial Wash</h3>
+            <p>Membersihkan wajah dengan lembut.</p>
+        </div>
+    </div>
+
+
+    <div class="review" id="review">
+        <h2>Review Pelanggan</h2>
+        <p>"Kulitku jadi lebih glowing setelah pakai produk ini!"</p>
+         <p>"Kulitku tampak lebih cerah setelah sebulan menggunakan produk ini!"</p>
+          <p>"Aku ingin terus memakai nya karna cocok di muka saya"</p>
+    </div>
+
+    <div class="contact" id="kontak">
+        <h2>Kontak Kami</h2>
+        <p>Email: glowtoglow@gmail.com</p>
+        <p>Instagram admin :vriska_pasaribu</p>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Glad 2 Glow Skincare</p>
+    </div>
+
+</body>
+</html>

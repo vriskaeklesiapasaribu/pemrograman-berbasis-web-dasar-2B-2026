@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BzMe</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body id="body" class="bg-[#f8f8fc] text-black font-sans transition duration-300">
+
+<nav class="flex justify-between shadow items-center px-10 py-5 bg-white">
+  <div class="flex items-center gap-8">
+    <div class="w-6 h-6">
+        <img src="Logo.png">
+    </div>
+    <h1 class="font-bold text-lg text-purple-600">BzMe</h1>
+  </div>
+
+
+  <ul class="hidden md:flex gap-20 text-[#8A38F5] font-medium" id="navbarLinks">
+    <li><a href="#Home" class="text-orange-400 nav-link hover:text-[#8A38F5] transition duration-300 cursor-pointer">Home</a></li>
+    <li><a href="#About" class="nav-link hover:text-orange-400 transition duration-300 cursor-pointer">About</a></li>
+    <li><a href="#Services" class="nav-link hover:text-orange-400 transition duration-300 cursor-pointer">Services</a></li>
+    <li><a href="#Contact" class="nav-link hover:text-orange-400 transition duration-300 cursor-pointer">Contact</a></li>
+    <li><a href="#Blog" class="nav-link hover:text-orange-400 transition duration-300 cursor-pointer">Blog</a></li>
+  </ul>
+
+<div class="flex gap-3">
+  <button id="toggleDark" class="bg-gray-200 px-4 py-2 rounded-lg">Dark
+  </button>
+
+  <button id="openModal" class="bg-orange-400 text-white px-5 py-2 rounded-lg shadow">
+  Sign Up
+</button>
+</div>
+</nav>
+
+<div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+
+  <div id="modalBox" class="bg-white p-8 rounded-xl w-96 relative transition">
+
+    <button id="closeModal" class="absolute top-2 right-3 text-xl">✖</button>
+
+    <h2 class="text-2xl font-bold mb-4 text-center">Sign Up</h2>
+
+    <form id="signupForm" class="space-y-4">
+
+      <div>
+        <input type="text" id="sNama" placeholder="Nama"
+          class="w-full border p-3 rounded-lg">
+        <small id="sENama" class="text-red-500"></small>
+      </div>
+
+      <div>
+        <input type="email" id="sEmail" placeholder="Email"
+          class="w-full border p-3 rounded-lg">
+        <small id="sEEmail" class="text-red-500"></small>
+      </div>
+
+      <div>
+        <input type="password" id="sPassword" placeholder="Password"
+          class="w-full border p-3 rounded-lg">
+        <small id="sEPass" class="text-red-500"></small>
+      </div>
+
+      <button class="w-full bg-purple-600 text-white py-3 rounded-lg">
+        Sign Up
+      </button>
+
+    </form>
+
+  </div>
+
+</div>
+
+<section id="Home" class="flex flex-col md:flex-row items-center justify-between px-10 py-16">
+  <div class="max-w-lg">
+    <h2 class="text-5xl font-bold leading-tight">
+      We Create <br>
+      <span class="text-purple-600">Solutions</span> For <br>
+      Your Business
+    </h2>
+
+    <p class="text-gray-500 mt-4">
+      We provide intelligent technology solutions to optimize efficiency and accelerate your business growth.
+    </p>
+
+    <button class="mt-6 bg-orange-400 text-white px-6 py-3 rounded-lg shadow">
+      Get Started
+    </button>
+  </div>
+
+  <div class="mt-10 md:mt-0">
+    <img src="1.png"
+         class="w-130">
+  </div>
+
+</section>
+
+<section id="About" class=" flex flex-col md:flex-row items-center justify-between px-10 py-16">
+</section>
+
+  <h2 class="text-2xl font-bold">
+    We Provide The Best <span class="text-purple-600">Services</span>
+  </h2>
+
+  <p class="text-gray-400 mt-2">
+    We deliver high-quality technology services specifically 
+    designed to enhance your business productivity and scalability in a sustainable way.
+  </p>
+
+  <div class="grid md:grid-cols-4 gap-6 mt-10">
+
+    <!--card -->
+    <div class="bg-white p-6 rounded-xl shadow hover:scale-105 transition">
+      <div class="bg-[#FF9335] w-10 h-10 text-purple-600 flex items-center justify-center rounded-full mb-3">
+        <img src="icon 1.png">
+      </div>
+      <h3 class="font-semibold">Seo/Sem</h3>
+      <p class="text-gray-400 text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sed unde beatae, voluptates rem, pariatur, accusantium illum aliquid non nobis minus quaerat facere tempora nihil quo. Corporis ut mollitia atque!</p>
+      <button class="mt-4 bg-purple-600 text-white px-4 py-1 rounded text-sm">
+        Click Here
+      </button>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow hover:scale-105 transition">
+      <div class="w-10 h-10 bg-[#FF9335] text-purple-600 flex items-center justify-center rounded-full mb-3">
+        <img src="icon 1.png">
+      </div>
+      <h3 class="font-semibold">Viral Campaign</h3>
+      <p class="text-gray-400 text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat labore exercitationem ea sunt. Nemo itaque voluptatum dignissimos, architecto eius culpa odit quibusdam et repellendus qui perferendis! Aliquam odio dicta et?</p>
+      <button class="mt-4 bg-purple-600 text-white px-4 py-1 rounded text-sm">
+        Click Here
+      </button>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow hover:scale-105 transition">
+      <div class="w-10 h-10 bg-[#FF9335] text-purple-600 flex items-center justify-center rounded-full mb-3">
+        <img src="icon 2.png">
+      </div>
+      <h3 class="font-semibold">Marketing</h3>
+      <p class="text-gray-400 text-sm mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem officiis, reiciendis quidem quod mollitia consequatur pariatur quis consectetur excepturi repellendus? Optio commodi nulla reprehenderit delectus, inventore porro culpa quo dolorum!</p>
+      <button class="mt-4 bg-purple-600 text-white px-4 py-1 rounded text-sm">
+        Click Here
+      </button>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow hover:scale-105 transition">
+      <div class="w-10 h-10 bg-[#FF9335] text-purple-600 flex items-center justify-center rounded-full mb-3">
+        <img src="icon 3.png" width="30" >
+      </div>
+      <h3 class="font-semibold">Others</h3>
+      <p class="text-gray-400 text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda facilis ex soluta, explicabo exercitationem aspernatur neque, placeat eum velit dolore cumque illo vitae quo ullam laboriosam architecto sit quasi eos?</p>
+      <button class="mt-4 bg-purple-600 text-white px-4 py-1 rounded text-sm">
+        Click Here
+      </button>
+    </div>
+
+  </div>
+</section>
+</section>
+
+<!--simple solutions-->
+<section class="bg-[#f4c86a] px-10 py-16 flex flex-col md:flex-row items-center justify-between">
+
+  <img src="2.png" class="w-130 items-center justify-between">
+
+  <div class="max-w-lg">
+    <h2 class="text-3xl font-bold">
+      Simple <span class="text-purple-600">Solutions!</span>
+    </h2>
+
+    <p class="mt-4 text-gray-700">
+      We understand that no two are alike. That's why we take the time to understand your goals, challenges, and vision.
+    </p>
+
+    <div class="mt-6 flex gap-4">
+      <button class="bg-orange-400 text-white px-6 py-2 rounded-lg shadow">
+        Get Started
+      </button>
+
+      <button class="border-2 border-purple-700 text-purple-700 px-6 py-2 rounded-lg">
+        Read More
+      </button>
+    </div>
+  </div>
+</section>
+
+<!--our agency-->
+<section class="bg-gray-100 px-10 py-16 flex flex-col md:flex-row items-center justify-between">
+
+  <div class="max-w-lg">
+    <h2 class="text-3xl font-bold text-black-700">
+      Our <span class="text-purple-600">Agency</span>
+    </h2>
+
+    <p class="mt-4 text-gray-600">
+      We believe in the power of data. Our analytics-driven approach allows us to make informed decisions and turn your data into actionable insights.
+    </p>
+
+    <button class="mt-6 bg-orange-400 text-white px-6 py-2 rounded-lg shadow">
+      Read More
+    </button>
+  </div>
+
+  <img src="3.png" class=" w-130 mt-10 md:mt-0">
+
+</section>
+
+<!--testimony-->
+<section class="bg-gray-100 px-10 py-16 text-center">
+
+  <h2 class="text-3xl font-bold">
+    What <span class="text-orange-400">Clients</span> Say!
+  </h2>
+
+  <p class="text-gray-500 mt-2">
+    See how our digital marketing agency helped clients achieve their goals
+  </p>
+
+  <div class="grid md:grid-cols-3 gap-6 mt-10">
+
+    <!--card-->
+    <div class="bg-white p-6 rounded-xl shadow">
+      <h3 class="font-bold text-orange-400">Johnny Suh</h3>
+      <p class="text-sm text-gray-500">Executive CEO</p>
+      <p class="text-gray-400 mt-3 text-sm">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <div class="flex">
+        <img src="Star 2.png">
+        <img src="Star 2.png">
+        <img src="Star 2.png">
+        <img src="Star 1.png">
+        <img src="Star 1.png">
+      </div>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow">
+      <h3 class="font-bold text-orange-400">Nashley Juan</h3>
+      <p class="text-sm text-gray-500">Executive CEO</p>
+      <p class="text-gray-400 mt-3 text-sm">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <div class="flex">
+        <img src="Star 2.png">
+        <img src="Star 2.png">
+        <img src="Star 2.png">
+        <img src="Star 2.png">
+        <img src="Star 1.png">
+        <img src="Star 1.png">
+
+      </div>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow">
+      <h3 class="font-bold text-orange-400">Mark Z.</h3>
+      <p class="text-sm text-gray-500">Executive CEO</p>
+      <p class="text-gray-400 mt-3 text-sm">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <div class="flex">
+        <img src="Star 2.png">
+        <img src="Star 2.png">
+        <img src="Star 2.png">
+        <img src="Star 2.png">
+        <img src="Star 2.png">
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="px-10 py-10 bg-white">
+  <div class="bg-orange-400 text-white rounded-xl flex flex-col md:flex-row justify-between items-center px-8 py-6">
+
+    <h3 class="text-lg font-semibold mb-4 md:mb-0">
+      Ready To Get Started?
+    </h3>
+
+    <button class="border border-white px-6 py-2 rounded-lg hover:bg-white hover:text-orange-400 transition">
+      Contact Us
+    </button>
+
+  </div>
+</section>
+
+</section> 
+
+<!-- CTA tetap di bawah -->
+<section class="px-10 py-10 bg-white">
+
+<!-- FOOTER -->
+<footer class="bg-[#f4c86a] px-10 py-16">
+
+  <div class="grid md:grid-cols-4 gap-8">
+
+    <div>
+      <div class="flex items-center gap-4 justify-center">
+        <h1 class="text-xl font-bold text-purple-600 ">
+            <img src="Logo.png" class="w-10 h-10">
+        <h1 class="text-xl font-bold text-purple-600">BzMe</h1>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="font-semibold mb-3">Company</h3>
+      <ul class="text-gray-700 space-y-2 text-sm">
+        <li>About</li>
+        <li>Contact</li>
+        <li>Careers</li>
+        <li>Team</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-semibold mb-3">Designs</h3>
+      <ul class="text-gray-700 space-y-2 text-sm">
+        <li>Find a Designer</li>
+        <li>Discover Inspiration</li>
+        <li>Pricing</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-semibold mb-3">Support</h3>
+      <ul class="text-gray-700 space-y-2 text-sm">
+        <li>Privacy Policy</li>
+        <li>Terms</li>
+      </ul>
+    </div>
+
+  </div>
+
+</footer>
+
+<script>
+const toggle = document.getElementById("toggleDark");
+const body = document.getElementById("body");
+const modalBox = document.getElementById("modalBox");
+const modal = document.getElementById("modal");
+
+const allSections = document.querySelectorAll("nav, section, footer");
+const whiteCards = document.querySelectorAll(".bg-white");
+
+let dark = false;
+
+toggle.onclick = () => {
+  dark = !dark;
+
+  if (dark) {
+    body.classList.remove("bg-[#f8f8fc]", "text-black");
+    body.classList.add("bg-black", "text-white");
+
+    allSections.forEach(item => {
+      item.classList.remove(
+        "bg-white",
+        "bg-gray-100",
+        "bg-[#f4c86a]",
+        "bg-[#f8f8fc]"
+      );
+      item.classList.add("bg-black", "text-white");
+    });
+
+    whiteCards.forEach(card => {
+      card.classList.remove("bg-white");
+      card.classList.add("bg-gray-800", "text-white");
+    });
+
+    modalBox.classList.remove("bg-white");
+    modalBox.classList.add("bg-gray-800", "text-white");
+
+    toggle.innerText = "Light";
+
+  } else {
+    body.classList.remove("bg-black", "text-white");
+    body.classList.add("bg-[#f8f8fc]", "text-black");
+
+    allSections.forEach(item => {
+      item.classList.remove("bg-black", "text-white");
+    });
+
+    whiteCards.forEach(card => {
+      card.classList.remove("bg-gray-800", "text-white");
+      card.classList.add("bg-white");
+    });
+
+    modalBox.classList.remove("bg-gray-800", "text-white");
+    modalBox.classList.add("bg-white");
+
+    toggle.innerText = "Dark";
+  }
+};
+
+document.getElementById("openModal").onclick = () => {
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
+};
+
+document.getElementById("closeModal").onclick = () => {
+  modal.classList.add("hidden");
+  modal.classList.remove("flex");
+};
+</script>
